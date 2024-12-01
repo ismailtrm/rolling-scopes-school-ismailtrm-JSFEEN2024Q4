@@ -6,18 +6,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Edit Page</h1>
-    <nav>
-        <a href="/gifts.html">Gifts</a>
-        <a href="#about">About</a>
-        <a href="#best">Best</a>
-        <a href="#contacts">Contacts</a>
-    </nav>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <span class="snowflake"><i class="fas fa-snowflake"></i></span>
+            <span class="brand-name">The Gifts</span>
+        </div>
+        <nav class="navigation">
+            <a href="#gifts">Gifts</a>
+            <a href="#about">About</a>
+            <a href="#best">Best</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </div>
 </header>
 <main>
 
-    <section class="hero" style="background-image: url('img/bg-ball.png'); background-size: cover; background-position: center;">
+    <section class="hero">
         <div class="card">
             <h2>Merry Christmas</h2>
             <h3>GIFT YOURSELF THE MAGIC OF NEW POSSIBILITIES</h3>
@@ -28,11 +33,11 @@
 
     <section class="about">
         <div class="container">
-            <div>
+            <div class="content">
+                <h1>About</h1>
                 <h2>Unleash Your Inner Superhero!</h2>
                 <p>This New Year marks the beginning of your journey to inner harmony and new strengths. We offer unique gifts that will help you improve your life.</p>
             </div>
-
             <img src="/img/santa.png" alt="Santa and snowman under Christmas lights">
         </div>
     </section>
