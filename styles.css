@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -46,7 +49,7 @@ main {
 }
 
 .hero {
-    background-image: url('img/bg-snow.png');
+    background-image: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png');
     background-size: cover;
     background-position: center;
     background-color: #e53e3e;
@@ -59,7 +62,7 @@ main {
 }
 
 .hero .card {
-    background-image: url('img/bg-ball.png');
+    background-image: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-ball.png');
     background-size: cover;
     background-position: center;
     padding-top: 5rem;
@@ -107,7 +110,7 @@ main {
 }
 
 .about {
-    background-image: url('img/bg-snow.png');
+    background-image: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png');
     background-size: cover;
     background-position: center;
     background-color: #e33e3e;
@@ -137,6 +140,23 @@ main {
 
     max-width: 100%;
     border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .slider {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .best-gifts .gift-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .best-gifts .gift-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .slide {
@@ -220,10 +240,36 @@ main {
     font-weight: 500;
 }
 
+.santaNclock {
+    background-image: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-forest.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #e53e3e;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: relative;
+}
+.santaNclock .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.santaNclock .container .content {
+    display: flex;
+    padding-top: 15rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
+    padding-bottom: 25rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 aside {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: auto;
 }
 
 /* Footer */

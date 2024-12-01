@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <title>Edit Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="script.js">
+    <script src="script.js" defer></script>
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="logo">
-            <span class="snowflake"><i class="fas fa-snowflake"></i></span>
+            <img src="/https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imglogo.svg" alt="The Gifts Logo" class="logo">
             <span class="brand-name">The Gifts</span>
         </div>
         <nav class="navigation">
-            <a href="#gifts">Gifts</a>
+            <a href="gifts.html">Gifts</a>
             <a href="#about">About</a>
             <a href="#best">Best</a>
             <a href="#contacts">Contacts</a>
@@ -22,7 +22,6 @@
     </div>
 </header>
 <main>
-
     <section class="hero">
         <div class="card">
             <h2>Merry Christmas</h2>
@@ -32,37 +31,48 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="content">
                 <h1>About</h1>
                 <h2>Unleash Your Inner Superhero!</h2>
                 <p>This New Year marks the beginning of your journey to inner harmony and new strengths. We offer unique gifts that will help you improve your life.</p>
             </div>
-            <img src="/img/santa.png" alt="Santa and snowman under Christmas lights">
+            <img src="/https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imgsanta.png" alt="Santa and snowman under Christmas lights">
         </div>
     </section>
 
     <section class="live-create-love">
         <h2>Live, Create, Love</h2>
-        <div class="slider">
-            <div class="slide"><img src="/img/snowman.png" alt="Snowman celebrating"><p>Live</p></div>
-            <div class="slide"><img src="/img/christmas-trees.png" alt="Christmas tree"><p>Create</p></div>
-            <div class="slide"><img src="/img/christmas-tree-ball.png" alt="Decorated ornament"><p>Love</p></div>
-            <div class="slide"><img src="/img/fairytale-house.png" alt="house"><p>Dream</p></div>
-        </div>
-        <div class="slider-buttons">
-            <button class="prev-slide">&#10094;</button>
-            <button class="next-slide">&#10095;</button>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="/https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imgsnowman.png" alt="Snowman celebrating"><p>Live</p></div>
+                <div class="slide"><img src="/https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imgchristmas-trees.png" alt="Christmas tree"><p>Create</p></div>
+                <div class="slide"><img src="/https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imgchristmas-tree-ball.png" alt="Decorated ornament"><p>Love</p></div>
+                <div class="slide"><img src="/https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imgfairytale-house.png" alt="house"><p>Dream</p></div>
+            </div>
+            <div class="slider-buttons">
+                <button class="slider-nav-button slider-nav-button_prev">&#10094;</button>
+                <button class="slider-nav-button slider-nav-button_next">&#10095;</button>
+            </div>
         </div>
     </section>
 
-    <section class="best-gifts">
+    <section class="best-gifts" id="gifts">
         <h2>Best Gifts</h2>
         <div class="gift-grid">
-            <div class="gift"><img src="img/for-work.png" alt="Work gift"><p>Console.log Guru</p></div>
-            <div class="gift"><img src="img/for-health.png" alt="Health gift"><p>Hydration Bot</p></div>
-            <div class="gift"><img src="img/for-harmony.png" alt="Harmony gift"><p>Spontaneous Coding Philosopher</p></div>
+            <div class="gift"><img src="https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imgfor-work.png" alt="Work gift"><p>Console.log Guru</p></div>
+            <div class="gift"><img src="https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imgfor-health.png" alt="Health gift"><p>Hydration Bot</p></div>
+            <div class="gift"><img src="https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/imgfor-harmony.png" alt="Harmony gift"><p>Spontaneous Coding Philosopher</p></div>
+        </div>
+    </section>
+
+    <section class="santaNclock">
+        <div class="container">
+            <div class="content">
+                <h2>Time to Get Ready for Christmas</h2>
+                <p>Christmas is coming! Santa is already on his way to bring you gifts. Are you ready to meet him?</p>
+            </div>
         </div>
     </section>
 
