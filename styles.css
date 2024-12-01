@@ -161,6 +161,8 @@ main {
 }
 
 .slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
     width: 100%;
     gap: 2rem;
@@ -173,6 +175,49 @@ main {
 .slider img {
     width: 100%;
     transition: transform 0.5s ease;
+}
+
+.best-gifts {
+    padding: 4rem 1rem;
+    background-color: #e33e3e;
+}
+
+.best-gifts h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.best-gifts .gift-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.best-gifts .gift {
+    background: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.best-gifts .gift img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.best-gifts .gift p {
+    font-weight: bold;
+    color: #3182ce;
+    margin: 0.5rem 0;
+}
+
+.best-gifts .gift h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 aside {
