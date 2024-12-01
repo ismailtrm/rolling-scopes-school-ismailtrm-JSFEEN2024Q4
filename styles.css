@@ -2,26 +2,32 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ff4646
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
     padding: 1em;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
-    background-color: #333;
+    background-color: #fdfdfd;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
-    color: white;
-    display: block;
+    color: #000000;
     padding: 14px 20px;
     text-align: center;
     text-decoration: none;
+    display: block;
 }
 
 nav a:hover {
