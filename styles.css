@@ -40,9 +40,16 @@ main {
     margin: 20px;
 }
 
-section {
-    flex: 3;
+.about {
+    flex: 2;
     padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 aside {
