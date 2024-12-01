@@ -139,42 +139,41 @@ main {
     border-radius: 20px;
 }
 
-/* Slider styles */
-.slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
 .slide {
-    display: none;
+    display: grid;
     text-align: center;
 }
 
-.slider .slide img {
+.slide img {
     width: 100%;
-    border-radius: 20px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.slider-buttons {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+.slide h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #fff;
 }
 
-.slider-buttons button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
+.slider {
+    overflow: hidden;
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #e33e3e;
 }
 
-.slider-buttons button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.slider img {
+    width: 100%;
+    transition: transform 0.5s ease;
 }
-
 
 aside {
     flex: 1;
