@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ff4646;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -46,6 +46,8 @@ main {
 
 .hero {
     background-color: #e53e3e;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     text-align: center;
     padding: 4rem 1rem;
     position: relative;
@@ -96,23 +98,24 @@ main {
 }
 
 .about {
-    background-color: #ffffff;
+    background-color: #e33e3e;
     padding: 4rem 1rem;
-    border-radius: 8px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+
 }
 
 .about .container {
+    background-color: #ffffff;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.about img {
+.about .container img {
+
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 aside {
