@@ -1,5 +1,5 @@
 /* Main stylesheet that imports all other styles */
-@import 'https://raw.githubusercontent.com/ismailtrm/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/refs/heads/christmas-shop/styles/base.css';
-@import 'https://raw.githubusercontent.com/ismailtrm/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/refs/heads/christmas-shop/styles/layout.css';
-@import 'https://raw.githubusercontent.com/ismailtrm/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/refs/heads/christmas-shop/styles/components.css';
-@import 'https://raw.githubusercontent.com/ismailtrm/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/refs/heads/christmas-shop/styles/pages.css';
+@import 'styles/base.css';
+@import 'styles/layout.css';
+@import 'styles/components.css';
+@import 'styles/pages.css';
