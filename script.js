@@ -1,12 +1,11 @@
 let slideIndex = 0;
 const slidesToShow = 3;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 const slideWidth = 100 / slidesToShow;
-
-showSlides(slideIndex);
 
 function showSlides(n) {
     const slider = document.querySelector('.slider');
-    const totalSlides = document.querySelectorAll('.slide').length;
 
     if (n >= totalSlides - slidesToShow + 1) { slideIndex = 0; }
     if (n < 0) { slideIndex = totalSlides - slidesToShow; }
@@ -25,3 +24,5 @@ document.querySelector('.slider-nav-button_prev').addEventListener('click', () =
 document.querySelector('.slider-nav-button_next').addEventListener('click', () => {
     showSlides(++slideIndex);
 });
+
+showSlides(slideIndex);

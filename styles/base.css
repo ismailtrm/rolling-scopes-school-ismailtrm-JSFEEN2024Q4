@@ -1,0 +1,33 @@
+/* Base styles */
+:root {
+    --primary-color: #e53e3e;
+    --secondary-color: #181C29;
+    --text-color: #666;
+    --background-color: #E53E3EFF;
+    --compoment-background-color: #fff;
+    --padding: 1rem;
+    --border-radius: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--compoment-background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #E53E3EFF;
+}
+
+section {
+    content-align: center;
+    text-align: center;
+}

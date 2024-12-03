@@ -1,0 +1,34 @@
+/* Layout styles */
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--padding);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--compoment-background-color);
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .wrapper {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .wrapper {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+}

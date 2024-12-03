@@ -1,0 +1,131 @@
+/* Page-specific styles */
+.hero {
+    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
+    border-radius: 20px;
+    text-align: center;
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+    padding-bottom: var(--padding);
+    position: relative;
+}
+
+.hero .card {
+    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-ball.png') center/cover;
+    padding: 5rem 0;
+    border-radius: var(--border-radius);
+    display: inline-block;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+    opacity: 0.5;
+    margin: 0;
+    font-style: italic;
+}
+
+.hero .card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #000;
+}
+
+.hero .card h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.hero .card a {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero .card a:hover {
+    background-color: #000;
+}
+
+.hero .card p {
+    color: #ffffff;
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+
+.about {
+    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
+    padding: 2rem;
+    display: grid;
+}
+
+.about .container {
+    background-color: var(--compoment-background-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .about .container {
+        flex-direction: column;
+    }
+}
+
+.about .container .content {
+    flex: 1;
+    padding: 20px;
+    margin: 1rem;
+}
+
+.about .container .content ,h1{
+    color: #E53E3EFF;
+}
+
+.about .container .content ,h2{
+    color: #000000;
+}
+
+
+.about .container img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.live-create-love{
+    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
+    padding: 2rem;
+    display: grid;
+    h1{
+        color: #ffffff;
+        margin: 0.5rem;
+    }
+    h2{
+        color: #ffffff;
+        margin: 0.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .slider {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .best-gifts .gift-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .best-gifts .gift-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
