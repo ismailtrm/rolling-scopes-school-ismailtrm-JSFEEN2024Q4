@@ -1,48 +1,113 @@
-/* Base styles */
+
 :root {
-    --primary-color: #e53e3e;
-    --secondary-color: #181C29;
-    --text-color: #666;
-    --background-color: #E53E3EFF;
-    --compoment-background-color: #fff;
-    --padding: 1rem;
+    /* Colors */
+    --primary-color: #ff4646; /* Main accent color */
+    --primary-10: rgba(255, 91, 91, 0.1); /* Primary with alpha 10% */
+    --dark-color: #1C1C1C; /* Dark color for text/backgrounds */
+    --static-white: #FFFFFF; /* Static white color */
+    --static-white-40: rgba(255, 255, 255, 0.4); /* Static white alpha 40% */
+    --static-white-20: rgba(255, 255, 255, 0.2); /* Static white alpha 20% */
+    --tag-purple: #606EFF; /* Tag purple color */
+    --tag-pink: #FF5BFF; /* Tag pink color */
+    --tag-green: #24FF5E; /* Tag green color */
+    --content-background: #F5F5F5; /* Content background color */
+    --overlay-color: rgba(28, 28, 28, 0.8); /* Overlay color with 80% alpha */
+
+    /* Typography */
+
+    --font-family-primary: 'Montserrat', semi-bold;
+    --font-family-secondary: 'Allura', regular;
+
+    --header1-size: 32px;
+    --header1-weight: 600;
+    --header1-line-height: 48px;
+    --header1-letter-spacing: 5.76px;
+    --header1-transform: uppercase;
+
+    --header2-size: 24px;
+    --header2-weight: 600;
+    --header2-line-height: 36px;
+    --header2-letter-spacing: 2.4px;
+    --header2-transform: uppercase;
+
+    --header3-size: 16px;
+    --header3-weight: 600;
+    --header3-line-height: 20px;
+    --header3-letter-spacing: 1.28px;
+    --header3-transform: uppercase;
+
+    --header4-size: 12px;
+    --header4-weight: 600;
+    --header4-line-height: 130%;
+    --header4-letter-spacing: 0.6px;
+    --header4-transform: uppercase;
+
+    --paragraph-size: 16px;
+    --paragraph-weight: 400;
+    --paragraph-line-height: 145%;
+
+    --action-large-size: 24px;
+    --action-large-weight: 600;
+    --action-large-line-height: 152%;
+    --action-large-letter-spacing: 16%;
+    --action-large-transform: uppercase;
+
+    --action-small-size: 12px;
+    --action-small-weight: 600;
+    --action-small-line-height: 130%;
+    --action-small-letter-spacing: 5%;
+    --action-small-transform: uppercase;
+
+    --caption-size: 24px;
+    --caption-weight: 400;
+    --caption-line-height: 100%;
+    --caption-letter-spacing: 5%;
+
+    --slider-text-size: 80px;
+    --slider-text-weight: 600;
+    --slider-text-transform: uppercase;
+
+    /* Borders */
     --border-radius: 20px;
 }
+
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--compoment-background-color);
+    background-color: var(--static-white);
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
 }
 
 main {
-    background-color: #E53E3EFF;
-}
-
-section {
-    content-align: center;
-    text-align: center;
-}
-
-/* Layout styles */
-.wrapper {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 var(--padding);
+    background-color: var(--primary-color);
+    background-image: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png');
+    background-size: contain;
+    background-repeat: repeat;
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--compoment-background-color);
+}
+.wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
+    .wrapper {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
     .wrapper {
         max-width: 1200px;
     }
@@ -67,153 +132,21 @@ section {
     }
 }
 
-/* Page-specific styles */
-.hero {
-    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
-    border-radius: 20px;
-    text-align: center;
-    padding-right: var(--padding);
-    padding-left: var(--padding);
-    padding-bottom: var(--padding);
-    position: relative;
-}
-
-.hero .card {
-    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-ball.png') center/cover;
-    padding: 5rem 0;
-    border-radius: var(--border-radius);
-    display: inline-block;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    font-weight: lighter;
-    opacity: 0.5;
-    margin: 0;
-    font-style: italic;
-}
-
-.hero .card h2 {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #000;
-}
-
-.hero .card h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 1rem 0;
-}
-
-.hero .card a {
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.hero .card a:hover {
-    background-color: #000;
-}
-
-.hero .card p {
-    color: #ffffff;
-    font-style: italic;
-    margin: 0.5rem 0;
-}
-
-.about {
-    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
-    padding: 2rem;
-    display: grid;
-}
-
-.about .container {
-    background-color: var(--compoment-background-color);
-    border-radius: var(--border-radius);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .about .container {
-        flex-direction: column;
-    }
-}
-
-.about .container .content {
-    flex: 1;
-    padding: 20px;
-    margin: 1rem;
-}
-
-.about .container .content ,h1{
-    color: #E53E3EFF;
-}
-
-.about .container .content ,h2{
-    color: #000000;
-}
-
-
-.about .container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-}
-
-.live-create-love{
-    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
-    padding: 2rem;
-    display: grid;
-    h1{
-        color: #ffffff;
-        margin: 0.5rem;
-    }
-    h2{
-        color: #ffffff;
-        margin: 0.5rem;
-    }
-}
-@media (max-width: 768px) {
-    .slider {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .best-gifts .gift-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .slider {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .best-gifts .gift-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 /* Component styles */
 .header {
-    background-color: var(--compoment-background-color);
-    padding: var(--padding) 0;
+    background-color: var(--static-white);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 8px;
 }
 
 .header .container {
+    padding: 12px 12px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -231,6 +164,7 @@ section {
 .header nav {
     display: flex;
     flex-direction: row;
+    gap: 8px;
 }
 
 .header nav a {
@@ -255,6 +189,195 @@ section {
         margin: 0.5rem 0;
     }
 }
+/* Page-specific styles */
+p {
+    font-family: var(--font-family-secondary);
+    font-size: var(--caption-size);
+    font-weight: var(--caption-weight);
+    line-height: var(--caption-line-height);
+    letter-spacing: var(--caption-letter-spacing);
+    font-style: italic;
+    margin: 0;
+}
+
+h1 {
+    font-family: var(--font-family-primary);
+    color: var(--static-white);
+    font-size: var(--header1-size);
+    font-weight: var(--header1-weight);
+    letter-spacing: var(--header1-letter-spacing);
+    line-height: var(--header1-line-height);
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    font-family: var(--font-family-primary);
+    font-size: var(--header2-size);
+    font-weight: var(--header2-weight);
+    letter-spacing: var(--header2-letter-spacing);
+    line-height: var(--header2-line-height);
+    text-align: center;
+    margin: 0;
+}
+
+h3{
+    font-family: var(--font-family-primary);
+    color: var(--static-white);
+    font-size: var(--header3-size);
+    font-weight: var(--header3-weight);
+    letter-spacing: var(--header3-letter-spacing);
+    line-height: var(--header3-line-height);
+    text-align: center;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-ball.png');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+    padding-bottom: var(--padding);
+    position: relative;
+    max-width: 1440px;
+    max-height: 524px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.hero .card {
+    max-width: 1440px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero .card .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 12px;
+    max-width: 426px;
+    width: 100%;
+    max-height: 404px;
+    height: 100%;
+
+    p {
+        color: var(--static-white);
+    }
+    a {
+        background-color: var(--dark-color);
+        padding-top: 20px;
+        padding-right: 32px;
+        padding-left: 32px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+    a:hover {
+        background-color: #000;
+    }
+}
+
+.about {
+    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
+    padding: 2rem;
+    display: grid;
+}
+
+.about .container {
+    background-color: var(--static-white);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .about .container {
+        flex-direction: column;
+    }
+}
+
+.about .container .content {
+    flex: 1;
+    padding: 20px;
+    margin: 1rem;
+}
+
+.about .container .content h1{
+    color: #000000;
+}
+
+.about .container .content p{
+    color: var(--primary-color);
+}
+
+.about .container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.live-create-love{
+    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 8px;
+    gap: 20px;
+    h1{
+        color: #ffffff;
+    }
+    h2{
+        color: #ffffff;
+    }
+    p{
+        color: var(--static-white);
+    }
+}
+@media (max-width: 768px) {
+    .slider {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .best-gifts .gift-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .best-gifts .gift-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* Adjust the slider container */
 .slider-container {
@@ -263,50 +386,38 @@ section {
 }
 
 .slider {
+    gap: 20px !important;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     transition: transform 0.5s ease;
+    justify-content: flex-start;
     h1{
+        display: flex;
+        flex-direction: column;
         color: #fff;
         text-align: center;
         font-size: 2.5rem;
         font-weight: bold;
     }
     h2{
-        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-family-primary);
+        color: var(--static-white);
+        font-size: var(--slider-text-size);
+        font-weight: var(--slider-text-weight);
         text-align: center;
-        font-size: 2.5rem;
-        font-weight: bold;
+        margin: 0;
     }
-}
-
-.slide {
-    flex: 0 0 33.33%;
-    box-sizing: border-box;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-
-.slide p {
-    width: 30%;
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: left;
-    color: #ffffff;
-}
-
-.slide img {
-    max-width: 70%;
-    margin-left: 1rem;
-    align-content: flex-end;
-    border-radius: 8px;
-}
-
-.slider img {
-    width: 100%;
-    transition: transform 0.5s ease;
+    img {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        border-radius: 24px;
+        transition: transform 0.5s ease;
+    }
 }
 
 /* Adjust the slider buttons */
@@ -329,17 +440,15 @@ section {
     justify-content: center;
 }
 
-.slider-nav-button:hover {
-    background-color: #000;
-}
-
 .slider-nav-button .icon {
-    width: 1rem;
-    height: 1rem;
+    width: 56px;
+    height: 56px;
     fill: currentColor;
 }
 
 .best-gifts {
+    display: flex;
+    flex-direction: column;
     padding: 4rem 1rem;
     background-color: var(--primary-color);
 }
@@ -376,7 +485,7 @@ section {
     margin-bottom: 1rem;
 }
 
-.best-gifts .gift p {
+.best-gifts .gift h3 {
     background-color: #fff;
     font-weight: bold;
     color: #000000;
@@ -391,10 +500,14 @@ section {
 }
 
 .santaNclock {
-    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-forest.png') center/cover var(--primary-color);
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+    padding: 60px 8px;
+    background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-forest.png');
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    padding: var(--padding);
-    position: relative;
 }
 
 .santaNclock .container {

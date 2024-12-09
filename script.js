@@ -1,6 +1,6 @@
 let slideIndex = 0;
 const slidesToShow = 3;
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slider img');
 const totalSlides = slides.length;
 const slideWidth = 100 / slidesToShow;
 
