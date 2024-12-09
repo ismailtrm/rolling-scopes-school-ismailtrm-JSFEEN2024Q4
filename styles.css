@@ -303,8 +303,15 @@ h3{
 
 .about {
     background: url('https://ismailtrm.github.io/rolling-scopes-school-ismailtrm-JSFEEN2024Q4/img/bg-snow.png') center/cover var(--primary-color);
-    padding: 2rem;
-    display: grid;
+    padding-top:60px;
+    padding-bottom: 60px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
 }
 
 .about .container {
@@ -314,6 +321,10 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 1276px;
+    width: 100%;
+    max-height: 528px;
+    height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -323,14 +334,39 @@ h3{
 }
 
 .about .container .content {
-    flex: 1;
-    padding: 20px;
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 426px;
+    width: 100%;
+    max-height: 328px;
+    height: 100%;
 }
 
 .about .container .content h1{
-    color: #000000;
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
 }
+
+.about .container .content h3{
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
 
 .about .container .content p{
     color: var(--primary-color);
@@ -352,10 +388,10 @@ h3{
     padding: 60px 8px;
     gap: 20px;
     h1{
-        color: #ffffff;
+        color: var(--static-white);
     }
     h2{
-        color: #ffffff;
+        color: var(--static-white);
     }
     p{
         color: var(--static-white);
@@ -451,18 +487,16 @@ h3{
     flex-direction: column;
     padding: 4rem 1rem;
     background-color: var(--primary-color);
-}
+    p{
+        color: var(--static-white);
+        text-align: center;
 
-.best-gifts h2 {
-    color: #fff;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
+    }
 }
 
 .best-gifts .gift-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
